@@ -3,10 +3,14 @@ package com.example.demo.users;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import com.sun.istack.NotNull;
+
 @Entity
 public class Users {
+	
 
 	@Id
+	@NotNull
 	private String username;
 	private String firstname;
 	private String lastname;
