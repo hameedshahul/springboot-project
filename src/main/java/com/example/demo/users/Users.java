@@ -3,14 +3,14 @@ package com.example.demo.users;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
-import com.sun.istack.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 @Entity
 public class Users {
 	
 
 	@Id
-	@NotNull
+	@Nullable
 	private String username;
 	private String firstname;
 	private String lastname;

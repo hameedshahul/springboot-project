@@ -25,10 +25,10 @@ public class UserService {
 	
 	public Users singleUser(String id) {
 		List<Users> a = (List<Users>) userRepository.findAll();
-		for (int i = 0; i < a.size(); i++) {
+		for (int i = 0; i < a.size();) {
 			if((a.get(i).getUsername()).equals(id))
-			return a.get(i);
-			break;
+				return a.get(i);
+			++i;
 		}
 		return null;
 	}
