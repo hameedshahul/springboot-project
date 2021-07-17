@@ -8,7 +8,10 @@ class AiitebackEndApinewApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
+		System.out.println("my new line added ");
 		System.out.println("my new line added by deepan");
+		
 	}
 
 }
